@@ -2,8 +2,9 @@ modules:
   'jira:issuePanel':
     - key: jira-gif-generator-hello-world-panel
       function: main
-      title: jira-gif-generator
+      title: GIF Generator
       icon: 'https://atlassian.design/favicon.png'
+      description: 'Generate GIFs based on the issue summary'
   function:
     - key: main
       handler: index.run

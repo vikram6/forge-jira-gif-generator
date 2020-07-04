@@ -1,8 +1,7 @@
-# Forge Hello World
+# Forge JIRA GIF Generator
 
-This project contains a Forge app written in Javascript that displays `Hello World!` in a Jira issue panel. 
+This project contains a Forge app written in Javascript that shows a GIF in the Jira issue panel. THe GIF is generated from giphy.com based on the summary field of the issue.
 
-See [developer.atlassian.com/platform/forge/](https://developer.atlassian.com/platform/forge) for documentation and tutorials explaining Forge.
 
 ## Requirements
 
@@ -11,9 +10,10 @@ See [Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/)
 ## Quick start
 
 - Modify your app by editing the `src/index.jsx` file.
-
+- Generate a giphy api key from https://developers.giphy.com/docs/api#quick-start-guide
 - Build and deploy your app by running:
 ```
+forge variables:set GIPHY_API_KEY <your giphy api key>
 forge deploy
 ```
 
@@ -24,14 +24,5 @@ forge install
 
 - Develop your app by running `forge tunnel` to proxy invocations locally:
 ```
-forge tunnel
+FORGE_USER_VAR_GIPHY_API_KEY=<your giphy api key> forge tunnel
 ```
-
-### Notes
-- Use the `forge deploy` command when you want to persist code changes.
-- Use the `forge install` command when you want to install the app on a new site.
-- Once the app is installed on a site, the site picks up the new app changes you deploy without needing to rerun the install command.
-
-## Support
-
-See [Get help](https://developer.atlassian.com/platform/forge/get-help/) for how to get help and provide feedback.
