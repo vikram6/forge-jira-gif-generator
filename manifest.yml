@@ -1,0 +1,12 @@
+modules:
+  'jira:issuePanel':
+    - key: jira-gif-generator-hello-world-panel
+      function: main
+      title: jira-gif-generator
+      icon: 'https://atlassian.design/favicon.png'
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: 'ari:cloud:ecosystem::app/f26149a4-fd8d-448f-83b6-30e62c42b08a'
+  name: jira-gif-generator
