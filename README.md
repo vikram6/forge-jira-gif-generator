@@ -7,7 +7,11 @@ This project contains a Forge app written in Javascript that shows a GIF in the 
 
 See [Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/) for instructions to get set up.
 
-## Quick start
+## Cloning the app
+
+Follow the steps in [example apps](https://developer.atlassian.com/platform/forge/example-apps/) to clone and register a new copy of the app.
+
+## Deploying and installing the app
 
 - Generate a giphy api key from https://developers.giphy.com/docs/api#quick-start-guide
 - Build and deploy your app by running:
