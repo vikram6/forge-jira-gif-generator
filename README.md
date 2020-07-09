@@ -1,6 +1,6 @@
 # Forge JIRA GIF Generator
 
-This project contains a Forge app written in Javascript that shows a GIF in the Jira issue panel. THe GIF is generated from giphy.com based on the summary field of the issue.
+This project contains a Forge app written in Javascript that shows a GIF in the Jira issue panel. The GIF is generated from giphy.com based on the summary field of the issue.
 
 
 ## Requirements
@@ -9,7 +9,6 @@ See [Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/)
 
 ## Quick start
 
-- Modify your app by editing the `src/index.jsx` file.
 - Generate a giphy api key from https://developers.giphy.com/docs/api#quick-start-guide
 - Build and deploy your app by running:
 ```
