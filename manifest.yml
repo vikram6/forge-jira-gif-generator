@@ -1,9 +1,12 @@
+permissions:
+  scopes:
+    - 'read:jira-work'
 modules:
   'jira:issuePanel':
     - key: jira-gif-generator-hello-world-panel
       function: main
-      title: GIF Generator
-      icon: 'https://atlassian.design/favicon.png'
+      title: Hey GIPHY!
+      icon: 'https://img.icons8.com/nolan/64/gif.png'
       description: 'Generate GIFs based on the issue summary'
   function:
     - key: main

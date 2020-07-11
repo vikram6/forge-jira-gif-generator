@@ -3,6 +3,9 @@ import ForgeUI, { render, Text, Fragment, Image, useAction, Button, useState, us
 // Importing the api object
 import api from "@forge/api";
 
+//import logo from './giphy.png';
+//const giphyLogo = require('./giphy.png');
+
 // GIPHY API base URL
 const GIPHY_API_BASE = 'https://api.giphy.com/v1/gifs/';
 
@@ -69,6 +72,7 @@ interface ImageCardProps {
 const ImageCard = ({title, src}: ImageCardProps) => (
     <Fragment>
         <Image src={src} alt={title}/>
+        <Image src="https://pickle-app.s3.amazonaws.com/giphy.png" alt="Powered by GIPHY" />
     </Fragment>
 );
 
@@ -82,7 +86,7 @@ const App = () => {
         <Fragment>
             <ImageCard src={url} title={title} />
             <Button
-                text="Generate new GIF"
+                text="&#x21bb; Show me another GIF"
                 onClick={() => {
                     setRandomGif();
                 }}
