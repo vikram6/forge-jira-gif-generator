@@ -3,9 +3,6 @@ import ForgeUI, { render, Text, Fragment, Image, useAction, Button, useState, us
 // Importing the api object
 import api from "@forge/api";
 
-//import logo from './giphy.png';
-//const giphyLogo = require('./giphy.png');
-
 // GIPHY API base URL
 const GIPHY_API_BASE = 'https://api.giphy.com/v1/gifs/';
 
@@ -17,7 +14,7 @@ interface GiphyJson {
 
 const fallbackDataArray = [
     {
-        title: "foo",
+        title: "My GIF",
         images: {
             fixed_height: {
                 url: "https://media.giphy.com/media/Tnchbhzt4fQQM/giphy.gif"
